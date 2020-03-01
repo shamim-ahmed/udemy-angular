@@ -5,7 +5,10 @@
         [disabled]="!allowNewServer">Add Server</button>
 <br>
 <br>
-<p *ngIf="serverCreated">{{ serverCreationMessage }}</p>
+<p *ngIf="serverCreated; else noServer">{{ serverCreationMessage }}</p>
+<ng-template #noServer>
+  <p>No server was created!</p>
+</ng-template>
 <br>
 <app-server></app-server>
 <app-server></app-server>
