@@ -1,3 +1,5 @@
 p.warning {
-    color: red;
+    padding: 20px;
+    color: lightcoral;
+    border: 1px solid red;
 }
