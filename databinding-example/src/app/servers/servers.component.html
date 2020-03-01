@@ -1,8 +1,12 @@
+<p>Server Name</p>
+<input type="text" (input)="onChangeServerName($event)">
+<hr>
 <button class="btn btn-primary" 
         [disabled]="!allowNewServer"
         (click)="onCreateServer()">Add Server</button>
 <br>
-<p [innerText]="allowNewServer"></p>
+<br>
+<p>{{ serverName }}</p>
 <br>
 <p>{{ serverCreationStatus }}</p>
 <br>
